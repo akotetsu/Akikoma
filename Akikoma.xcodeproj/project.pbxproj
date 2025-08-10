@@ -10,6 +10,8 @@
 		60888EDA2E48E90B007BCE4D /* AkikomaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888ED12E48E90B007BCE4D /* AkikomaApp.swift */; };
 		60888EDB2E48E90B007BCE4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888ED62E48E90B007BCE4D /* ContentView.swift */; };
 		60888EDC2E48E90B007BCE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60888ED82E48E90B007BCE4D /* Assets.xcassets */; };
+		60888EE72E48F83D007BCE4D /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888EE62E48F83D007BCE4D /* OnboardingPage.swift */; };
+		60888EE92E48F881007BCE4D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888EE82E48F881007BCE4D /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,12 +19,19 @@
 		60888ED12E48E90B007BCE4D /* AkikomaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkikomaApp.swift; sourceTree = "<group>"; };
 		60888ED62E48E90B007BCE4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60888ED82E48E90B007BCE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60888EE62E48F83D007BCE4D /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		60888EE82E48F881007BCE4D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		60888EDD2E48E927007BCE4D /* Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Components;
+			sourceTree = "<group>";
+		};
+		60888EEA2E48F89E007BCE4D /* Onboarding */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -65,6 +74,7 @@
 		60888ED32E48E90B007BCE4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				60888EE62E48F83D007BCE4D /* OnboardingPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +89,7 @@
 		60888ED52E48E90B007BCE4D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				60888EE82E48F881007BCE4D /* OnboardingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -86,6 +97,7 @@
 		60888ED72E48E90B007BCE4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60888EEA2E48F89E007BCE4D /* Onboarding */,
 				60888EDD2E48E927007BCE4D /* Components */,
 				60888ED62E48E90B007BCE4D /* ContentView.swift */,
 			);
@@ -122,6 +134,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				60888EDD2E48E927007BCE4D /* Components */,
+				60888EEA2E48F89E007BCE4D /* Onboarding */,
 			);
 			name = Akikoma;
 			packageProductDependencies = (
@@ -182,6 +195,8 @@
 			files = (
 				60888EDA2E48E90B007BCE4D /* AkikomaApp.swift in Sources */,
 				60888EDB2E48E90B007BCE4D /* ContentView.swift in Sources */,
+				60888EE72E48F83D007BCE4D /* OnboardingPage.swift in Sources */,
+				60888EE92E48F881007BCE4D /* OnboardingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

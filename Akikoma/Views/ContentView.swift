@@ -8,12 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(OnboardingViewModel.self) private var onboardingViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        VStack(spacing: 20) {
+            Image(systemName: "calendar.badge.plus")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .foregroundStyle(.blue)
+                .font(.system(size: 60))
+            
+            Text("AkiComa")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.blue)
+            
+            Text("空きコマ共有アプリ")
+                .font(.title2)
+                .foregroundColor(.secondary)
+            
+            Text("オンボーディング完了！")
+                .font(.headline)
+                .foregroundColor(.green)
+                .padding(.top, 20)
+            
+            // デバッグ用：オンボーディングをリセットするボタン
+            Button("オンボーディングをリセット") {
+                onboardingViewModel.resetOnboarding()
+            }
+            .foregroundColor(.red)
+            .padding(.top, 40)
         }
         .padding()
     }

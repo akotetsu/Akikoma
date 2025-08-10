@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct AkikomaApp: App {
+    @State private var onboardingViewModel = OnboardingViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if onboardingViewModel.hasSeenOnboarding {
+                ContentView()
+            } else {
+                OnboardingView()
+                    .environment(onboardingViewModel)
+            }
         }
     }
 }
