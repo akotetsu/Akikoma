@@ -6,14 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		60888EDA2E48E90B007BCE4D /* AkikomaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888ED12E48E90B007BCE4D /* AkikomaApp.swift */; };
+		60888EDB2E48E90B007BCE4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888ED62E48E90B007BCE4D /* ContentView.swift */; };
+		60888EDC2E48E90B007BCE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60888ED82E48E90B007BCE4D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		60888EBE2E48E843007BCE4D /* Akikoma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akikoma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60888ED12E48E90B007BCE4D /* AkikomaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkikomaApp.swift; sourceTree = "<group>"; };
+		60888ED62E48E90B007BCE4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60888ED82E48E90B007BCE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		60888EC02E48E843007BCE4D /* Akikoma */ = {
+		60888EDD2E48E927007BCE4D /* Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Akikoma;
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +41,7 @@
 		60888EB52E48E843007BCE4D = {
 			isa = PBXGroup;
 			children = (
-				60888EC02E48E843007BCE4D /* Akikoma */,
+				60888ED92E48E90B007BCE4D /* Akikoma */,
 				60888EBF2E48E843007BCE4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,57 @@
 				60888EBE2E48E843007BCE4D /* Akikoma.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		60888ED22E48E90B007BCE4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				60888ED12E48E90B007BCE4D /* AkikomaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60888ED32E48E90B007BCE4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60888ED42E48E90B007BCE4D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		60888ED52E48E90B007BCE4D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		60888ED72E48E90B007BCE4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60888EDD2E48E927007BCE4D /* Components */,
+				60888ED62E48E90B007BCE4D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60888ED92E48E90B007BCE4D /* Akikoma */ = {
+			isa = PBXGroup;
+			children = (
+				60888ED22E48E90B007BCE4D /* App */,
+				60888ED32E48E90B007BCE4D /* Models */,
+				60888ED72E48E90B007BCE4D /* Views */,
+				60888ED52E48E90B007BCE4D /* ViewModels */,
+				60888ED42E48E90B007BCE4D /* Services */,
+				60888ED82E48E90B007BCE4D /* Assets.xcassets */,
+			);
+			path = Akikoma;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +121,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				60888EC02E48E843007BCE4D /* Akikoma */,
+				60888EDD2E48E927007BCE4D /* Components */,
 			);
 			name = Akikoma;
 			packageProductDependencies = (
@@ -109,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60888EDC2E48E90B007BCE4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60888EDA2E48E90B007BCE4D /* AkikomaApp.swift in Sources */,
+				60888EDB2E48E90B007BCE4D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
