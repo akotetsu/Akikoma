@@ -21,6 +21,7 @@
 		60888F112E49D281007BCE4D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 60888F102E49D281007BCE4D /* FirebaseFirestore */; };
 		60888F132E49D281007BCE4D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 60888F122E49D281007BCE4D /* FirebaseStorage */; };
 		60888F152E49D298007BCE4D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 60888F142E49D28F007BCE4D /* .gitignore */; };
+		60888F172E49D6D6007BCE4D /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60888F162E49D6D6007BCE4D /* AuthError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		60888F012E490AAB007BCE4D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		60888F0B2E49D237007BCE4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60888F142E49D28F007BCE4D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		60888F162E49D6D6007BCE4D /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -104,6 +106,7 @@
 			children = (
 				60888EE62E48F83D007BCE4D /* OnboardingPage.swift */,
 				60888EFB2E490A5B007BCE4D /* User.swift */,
+				60888F162E49D6D6007BCE4D /* AuthError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60888F172E49D6D6007BCE4D /* AuthError.swift in Sources */,
 				60888EDA2E48E90B007BCE4D /* AkikomaApp.swift in Sources */,
 				60888EFE2E490A90007BCE4D /* AuthServiceProtocol.swift in Sources */,
 				60888F002E490A9B007BCE4D /* AuthService.swift in Sources */,

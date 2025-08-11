@@ -10,7 +10,6 @@ import SwiftUI
 struct OnboardingView: View {
     @Environment(OnboardingViewModel.self) private var onboardingViewModel
     @State private var currentPage = 0
-    @State private var showMainApp = false
     
     private let onboardingPages = OnboardingPage.pages
     
@@ -28,7 +27,6 @@ struct OnboardingView: View {
                 // スキップボタン
                 OnboardingSkipButton {
                     onboardingViewModel.markOnboardingAsComplete()
-                    showMainApp = true
                 }
                 
                 // ページビュー
@@ -52,14 +50,9 @@ struct OnboardingView: View {
                     },
                     onComplete: {
                         onboardingViewModel.markOnboardingAsComplete()
-                        showMainApp = true
                     }
                 )
             }
-        }
-        .fullScreenCover(isPresented: $showMainApp) {
-            ContentView()
-                .environment(onboardingViewModel)
         }
     }
 }

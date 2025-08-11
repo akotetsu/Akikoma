@@ -26,16 +26,45 @@ struct ContentView: View {
                 .font(.title2)
                 .foregroundColor(.secondary)
             
-            Text("オンボーディング完了！")
+            if let authViewModel = onboardingViewModel.authViewModel,
+               let user = authViewModel.currentUser {
+                Text("ようこそ、\(user.displayName)さん！")
+                    .font(.headline)
+                    .foregroundColor(.green)
+                    .padding(.top, 20)
+            }
+            
+            Text("認証完了！")
                 .font(.headline)
                 .foregroundColor(.green)
+                .padding(.top, 10)
+            
+            // ログアウトボタン
+            if let authViewModel = onboardingViewModel.authViewModel {
+                Button("ログアウト") {
+                    Task {
+                        await authViewModel.signOut()
+                    }
+                }
+                .foregroundColor(.red)
                 .padding(.top, 20)
+                
+                // アカウント削除ボタン
+                Button("アカウント削除") {
+                    Task {
+                        await authViewModel.deleteAccount()
+                        onboardingViewModel.onAccountDeleted()
+                    }
+                }
+                .foregroundColor(.red)
+                .padding(.top, 10)
+            }
             
             // デバッグ用：オンボーディングをリセットするボタン
             Button("オンボーディングをリセット") {
                 onboardingViewModel.resetOnboarding()
             }
-            .foregroundColor(.red)
+            .foregroundColor(.orange)
             .padding(.top, 40)
         }
         .padding()
